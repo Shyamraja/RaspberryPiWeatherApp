@@ -1,5 +1,5 @@
-import React from "react";
-class Form extends React.Component{
+import React, { Component } from 'react';
+class Form extends Component{
     render(){
         return(
             

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 
 class WeatherSensor extends Component {
   constructor() {
@@ -10,28 +10,34 @@ class WeatherSensor extends Component {
     this.state = {
       weather: []
     };
+  
+
     //this.showTemperature();
     this.getWeatherData();
   }
-  //showTemperature() {
-   //axios.get("http://172.20.240.117/weatherDew", {mode: 'no-cors'}).then(res => {
+    //showTemperature() {
+    //axios.get("http://172.20.240.117/weatherDew").then(res => {
     //const weather = res.data;
     //this.setState({ weather })
+    //console.log(res.data)
+  
   //});
 //}
     
-ss
- async getWeatherData() {
-  const api_call = await fetch('/http://172.20.240.117/weatherDew')
-  .then((response) => console.log(response.json()));
-  
     
-  
+ async getWeatherData() {
+   //console.log("getWeatherData");
+  //const api_call = await fetch('/http://172.20.240.117/weatherData')
+  //.then((response) => console.log(response.text()));
+  axios.get('http://172.20.240.117/weatherData')
+  .then(resp=>console.log(resp.data));
+    
+ }
  
   //const data = await api_call.json();
   //console.log(data)
  
- }
+ 
   render() {
     return (
         <div> 
