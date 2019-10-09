@@ -16,8 +16,8 @@ class App extends Component {
       error: undefined
     }
   }
-  async getWeather(e){
-    e.preventDefault();
+    async getWeather(e){
+     e.preventDefault();
     
     const api_call = await fetch('http://172.20.240.117/weatherData');
     const data = await api_call.json();
@@ -30,7 +30,7 @@ class App extends Component {
          dewpoint:    data.dewpoint,
          error:       ""
 
-      });
+       });
     
     
   }
