@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
+//import axios from 'axios';
 
 class WeatherSensor extends Component {
   constructor() {
@@ -23,14 +24,12 @@ class WeatherSensor extends Component {
   
   //});
 //}
-    
-    
- async getWeatherData() {
+    async getWeatherData() {
    //console.log("getWeatherData");
   //const api_call = await fetch('/http://172.20.240.117/weatherData')
   //.then((response) => console.log(response.text()));
-  axios.get('http://172.20.240.117/weatherData')
-  .then(resp=>console.log(resp.data));
+        // axios.get('http://172.20.240.117/weatherData')
+        // .then(resp=>console.log(resp.data));
     
  }
  
