@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+This was our IOT course project. We used raspberrypi and sensors to take data and data that were taken by sensor on server was displayed  in front end. Temperature, sensor and humidity data was displayed in form of graph as well as Table.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
